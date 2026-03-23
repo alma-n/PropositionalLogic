@@ -21,7 +21,7 @@ lemma lindenbaum' (C : Context) (hc : ¬ (Contradictory C)) (hs : S' = ⋃ i, S 
     exact hc
   · grind
 
--- Lemma 7.18 (Lindenbaumin (⋃ i ≤ j, S C f ilemma)
+-- Lemma 7.18 (Lindenbaumin lemma)
 lemma lindenbaum (C : Context) (hc : ¬ (Contradictory C)) (hs : S' = ⋃ i, S C f i) : ∃ D : Context, MaximallyConsistent D ∧ C ⊆ D := by
   have ⟨D, hd⟩ := lindenbaum' C hc hs
   use D
